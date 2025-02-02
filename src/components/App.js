@@ -1,8 +1,8 @@
 
-import { BrowserRouter, Route, Routes } from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { lazy } from "react";
 const Home = lazy(() => import("./pages/home"));
-const About = lazy(() => "./pages/about");
+const About = lazy(() => import("./pages/about"));
 import Team from "./pages/team";
 import Contact from "./pages/contact";
 import Chat from "./pages/chat";
